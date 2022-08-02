@@ -1,21 +1,21 @@
-import { AppContainer, Container, Heading } from "../styles/Home.styled";
-import { useSpring } from "react-spring";
+import { useSpring, animated } from "react-spring";
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const styles = useSpring({
+  const style = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
     config: {
-      mass: 272,
-      friction: 48
+      tension: 240,
+      friction: 64,
     }
   });
 
   return (
-    <AppContainer>
-      <Container>
-        <Heading style={styles}>Hello World</Heading>
-      </Container>
-    </AppContainer>
+    <div className={styles.app}>
+      <div className={styles.container}>
+        <animated.h1 style={style}>Hello World</animated.h1>
+      </div>
+    </div>
   )
 }
