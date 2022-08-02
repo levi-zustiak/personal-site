@@ -6,7 +6,7 @@ export default function Home() {
     to: { opacity: 1 },
     from: { opacity: 0 },
     config: {
-      tension: 240,
+      tension: 100,
       friction: 64,
     }
   });
