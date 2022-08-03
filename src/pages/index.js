@@ -38,10 +38,9 @@ export default function Home() {
     trail: 250,
     from: { opacity: 0, y: 10 },
     enter: { opacity: 1, y: 0 },
-    delay: 250
   })
 
-  useChain([headerRef, linkRef]);
+  useChain([headerRef, linkRef], [0, 0.25]);
 
   return (
     <div className={styles.app}>
