@@ -55,7 +55,7 @@ export default function Home() {
         <a.h1 style={headerAnimation}>Hello World</a.h1>
         <div className={styles.linkContainer}>
           {linkTransition((style, link) => (
-            <a.a className={styles[link.text]} style={style} href={link.url}>{link.text}</a.a>
+            <a.a className={styles[link.text]} style={style} href={link.url} target="_blank" rel="noreferrer noopener">{link.text}</a.a>
           ))}
         </div>
       </div>
