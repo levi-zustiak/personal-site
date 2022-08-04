@@ -17,7 +17,7 @@ export default function Home() {
     {
       text: 'resume',
       icon: "",
-      url: "https://www.levizustiak.dev/resume"
+      url: "./Resume.pdf"
     }
   ];
 
